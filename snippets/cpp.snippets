@@ -61,13 +61,13 @@ snippet pqueue
 ## Access Modifiers
 # private
 snippet pri
-	private
+	private:
 # protected
 snippet pro
-	protected
+	protected:
 # public
 snippet pub
-	public
+	public:
 # friend
 snippet fr
 	friend
@@ -137,7 +137,7 @@ snippet dmfun2
 snippet ns
 	namespace ${1:`vim_snippets#Filename('', 'my')`} {
 		${0}
-	} /* namespace $1 */
+	} // namespace $1
 ##
 ## Input/Output
 # std::cout
@@ -197,7 +197,7 @@ snippet lld
 snippet try
 	try {
 		
-	}catch(${1}) {
+	} catch(${1}) {
 		
 	}
 

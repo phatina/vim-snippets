@@ -82,12 +82,12 @@ snippet cla "An entire .h generator" b
 
 class ${1:`!v substitute(substitute(vim_snippets#Filename('$1','ClassName'),'^.','\u&',''), '_\(\w\)', '\u\1', 'g')`}
 {
-private:
-	$3
-
 public:
 	$1();
 	virtual ~$1();
+
+private:
+	$3
 };
 
 #endif /* $2 */
